@@ -1,4 +1,5 @@
-FROM alpine:3.10
+FROM arm32v7/alpine:3.10.2
+COPY qemu-arm-static /usr/bin/qemu-arm-static
 
 RUN apk update -f \
   && apk --no-cache add -f \
